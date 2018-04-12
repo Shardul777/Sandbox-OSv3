@@ -1,0 +1,17 @@
+[
+	{
+		"username": "Shardul",
+		"useremail":"sdabholkar@nextjump.com",
+		"userpwd" : "123@abc"
+	},
+	{
+		"username" :"Sagar",
+		"useremail" : "srane@nextjump.com",
+		"userpwd" : "123@abc"
+	},
+	{
+		"username" :"Ramani",
+		"useremail" : "rdodda@nextjump.com",
+		"userpwd" : "123@abc"
+	}
+]
