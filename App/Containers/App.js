@@ -1,9 +1,11 @@
 import '../Config'
+import '../Config/ReactotronConfig'
 import DebugConfig from '../Config/DebugConfig'
 import React, { Component } from 'react'
 import { Provider } from 'react-redux'
-import RootContainer from './RootContainer'
+import RootContainer  from './RootContainer'
 import createStore from '../Redux'
+
 
 // create our store
 const store = createStore()

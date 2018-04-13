@@ -13,10 +13,12 @@ class RootContainer extends Component {
     // if redux persist is not active fire startup action
     if (!ReduxPersist.active) {
       this.props.startup()
+    
     }
   }
 
   render () {
+    console.log('Hey ')
     return (
       <View style={styles.applicationView}>
         <StatusBar barStyle='light-content' />

@@ -4,7 +4,7 @@ import Immutable from 'seamless-immutable'
 /* ------------- Types and Action Creators ------------- */
 
 const { Types, Creators } = createActions({
-  loginRequest: ['data'],
+  loginRequest: ['email','password'],
   loginSuccess: ['payload'],
   loginFailure: null
 })
@@ -18,7 +18,8 @@ export const INITIAL_STATE = Immutable({
   data: null,
   fetching: null,
   payload: null,
-  error: null
+  error: null,
+  status: null,
 })
 
 /* ------------- Selectors ------------- */
@@ -30,8 +31,14 @@ export const LoginSelectors = {
 /* ------------- Reducers ------------- */
 
 // request the data from an api
-export const request = (state, { data }) =>
-  state.merge({ fetching: true, data, payload: null })
+export const request = (state,{email,password}) => state.merge({status:true})
+
+	//if (state.email=='sdabholkar' and state.password=='123@abc'){
+	//	return state.merge({status:true})
+	//}
+	 
+
+ // state.merge({ fetching: true, data, payload: null })
 
 // successful api lookup
 export const success = (state, action) => {
